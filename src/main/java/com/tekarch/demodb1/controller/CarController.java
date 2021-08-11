@@ -27,7 +27,7 @@ public class CarController {
     }
 
     @PostMapping(value ="/car")
-    public Car addNewCar(@RequestBody Car c1){
+    public Car addNewCarS(@RequestBody Car c1){
         return carRepository.save(c1);
 //        return "New Car Added with name = " + c1.getName();
         
