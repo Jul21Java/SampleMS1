@@ -14,7 +14,7 @@ public class CarController {
     private CarRepository carRepository;
 
     @GetMapping(value = "/car")
-    public List<Car> getCars(){
+    public List<Car> getCars(int count){
 //        Car c1 = new Car();
 //        c1.setColor("white");
 //        c1.setName("Vinod's Car");
@@ -27,7 +27,7 @@ public class CarController {
     }
 
     @PostMapping(value ="/car")
-    public Car addNewCarV(@RequestBody Car c1){
+    public Car addNewCarX(@RequestBody Car c1){
         return carRepository.save(c1);
 //        return "New Car Added with name = " + c1.getName();
         
