@@ -19,8 +19,9 @@ public class BikeController {
     private BikeRepository bikeRepository;
 
     @GetMapping(value = "/bike")
-    public List<Bike> getBikes(){
+    public List<Bike> getBikes(String name){
         return bikeRepository.findAll();
+        // some comments
     }
 
     @PostMapping(value ="/bike")
