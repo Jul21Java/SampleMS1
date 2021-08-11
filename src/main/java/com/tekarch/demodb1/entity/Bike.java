@@ -20,4 +20,6 @@ public class Bike {
     private String name;
     private String color;
     private String brandName;
+
+    // my 3rd change
 }
