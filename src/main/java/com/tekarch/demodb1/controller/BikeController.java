@@ -26,6 +26,8 @@ public class BikeController {
     @PostMapping(value ="/bike")
     public Bike addNewCar(@RequestBody Bike c1){
         return bikeRepository.save(c1);
+
+        // some code added in BikeController
 //        return "New Car Added with name = " + c1.getName();
     }
 
